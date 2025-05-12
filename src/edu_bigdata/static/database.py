@@ -6,11 +6,11 @@ import pandas as pd
 
 class DataBase:
     def __init__(self):
-        self.db_name = "src/edu_bigdata/static/db/dolar_analisis.sqlite" #/workspaces/bigdata_2025_1_2/src/edu_bigdata/static/db
+        self.db_name = "src/edu_bigdata/static/db/nvidia_analisis.sqlite" #/workspaces/bigdata_2025_1_2/src/edu_bigdata/static/db
 
 
     # CRUD C = create(insert) R= read U = update DF= Delete
-    def insert_data(self,df = pd.DataFrame(),nom_table="dolar_analisis"):
+    def insert_data(self,df = pd.DataFrame(),nom_table="nvidia_analisis"):
         try:
             df = df.copy()
             conn = sqlite3.connect(self.db_name)
